@@ -67,7 +67,6 @@
     "jest": "^24.9.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    "node-simhash": "^0.1.0",
     "nodeunit": "^0.9.1",
     "phantom": "^4.0.0",
     "postcss-loader": "^0.13.0",
