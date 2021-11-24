@@ -9,7 +9,8 @@
     "anyproxy-ca": "bin/anyproxy-ca"
   },
   "scripts": {
-    "start": "node bin/anyproxy"
+    "build": "tsc",
+    "start": "tsc && node bin/anyproxy"
   },
   "dependencies": {
     "async": "~0.9.0",
@@ -35,5 +36,8 @@
     "stream-throttle": "^0.1.3",
     "thunkify": "^2.1.2",
     "ws": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
   }
 }

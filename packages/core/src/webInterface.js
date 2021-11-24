@@ -61,7 +61,7 @@ class webInterface extends events.EventEmitter {
     const recorder = self.recorder;
     const ipAddress = ip.address();
     // userRule = proxyInstance.proxyRule,
-    const webBasePath = 'web';
+    const webBasePath = '../web';
     let ruleSummary = '';
     let customMenu = [];
 
