@@ -2,9 +2,9 @@
  * start the AnyProxy server
  */
 
-const ruleLoader = require('../lib/ruleLoader');
-const logUtil = require('../lib/log');
-const AnyProxy = require('../proxy');
+const ruleLoader = require('./ruleLoader');
+const logUtil = require('./log');
+const AnyProxy = require('./proxy');
 
 module.exports = function startServer(program) {
   let proxyServer;

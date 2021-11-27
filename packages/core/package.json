@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A fully configurable HTTP/HTTPS proxy in Node.js",
   "license": "MIT",
-  "main": "proxy.js",
+  "main": "dist/proxy.js",
   "bin": {
     "anyproxy": "bin/anyproxy",
     "anyproxy-ca": "bin/anyproxy-ca"

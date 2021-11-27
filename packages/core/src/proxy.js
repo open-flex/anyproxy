@@ -4,14 +4,14 @@ const http = require('http');
 const https = require('https');
 const async = require('async');
 const color = require('colorful');
-const certMgr = require('./lib/certMgr');
-const Recorder = require('./lib/recorder');
-const logUtil = require('./lib/log');
-const util = require('./lib/util');
+const certMgr = require('./certMgr');
+const Recorder = require('./recorder');
+const logUtil = require('./log');
+const util = require('./util');
 const events = require('events');
 const co = require('co');
-const WebInterface = require('./lib/webInterface');
-const wsServerMgr = require('./lib/wsServerMgr');
+const WebInterface = require('./webInterface');
+const wsServerMgr = require('./wsServerMgr');
 const ThrottleGroup = require('stream-throttle').ThrottleGroup;
 
 const T_TYPE_HTTP = 'http';
@@ -377,6 +377,6 @@ module.exports.ProxyServer = ProxyServer;
 module.exports.ProxyRecorder = Recorder;
 module.exports.ProxyWebServer = WebInterface;
 module.exports.utils = {
-  systemProxyMgr: require('./lib/systemProxyMgr'),
+  systemProxyMgr: require('./systemProxyMgr'),
   certMgr,
 };
