@@ -1,15 +1,13 @@
-#!/usr/bin/env node
-
 'use strict';
 
 const program = require('commander');
 const color = require('colorful');
 const co = require('co');
-const packageInfo = require('../package.json');
-const util = require('./util');
-const rootCACheck = require('./rootCACheck');
-const startServer = require('./startServer');
-const logUtil = require('./log');
+const packageInfo = require('../../package.json');
+const util = require('../util');
+const rootCACheck = require('../rootCACheck');
+const startServer = require('../startServer');
+const logUtil = require('../log');
 
 module.exports.run = function () {
   program
@@ -26,13 +24,13 @@ module.exports.run = function () {
     .parse(process.argv);
 
   if (program.clear) {
-    require('./certMgr').clearCerts(() => {
+    require('../certMgr').clearCerts(() => {
       util.deleteFolderContentsRecursive(util.getAnyProxyTmpPath());
       console.log(color.green('done !'));
       process.exit(0);
     });
   } else if (program.root) {
-    require('./certMgr').generateRootCA(() => {
+    require('../certMgr').generateRootCA(() => {
       process.exit(0);
     });
   } else {

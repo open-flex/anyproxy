@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('../dist/anyproxy').run();
+require('../dist/cli/anyproxy').run();
