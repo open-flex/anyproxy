@@ -1,8 +1,8 @@
 {
   "root": true,
-  "parser": "@babel/eslint-parser",
-  "extends": ["standard", "plugin:prettier/recommended"],
-  "plugins": ["@babel", "react"],
+  "parser": "@typescript-eslint/parser",
+  "extends": ["standard", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "plugins": ["@typescript-eslint", "react"],
   "rules": {
     "react/jsx-uses-vars": "error",
     "import/no-webpack-loader-syntax": "off"
